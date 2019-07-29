@@ -15,12 +15,12 @@ def load_library(library)
   return emoticon
 end
 
-
+sorry_message = "Sorry, that emoticon was not found"
 
 def get_japanese_emoticon(file, face)
   emoticon_hash = load_library(file)
   if !face
-    return "Sorry, that emoticon was not found"
+    return sorry_message
   end
   return emoticon_hash["get_emoticon"][face]
 end
