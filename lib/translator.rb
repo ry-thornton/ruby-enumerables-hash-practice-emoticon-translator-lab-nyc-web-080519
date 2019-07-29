@@ -26,5 +26,6 @@ end
 
 def get_english_meaning(file, face)
   emoticon_hash = load_library(file)
+  if !
   
 end
