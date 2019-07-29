@@ -1,4 +1,3 @@
-require 'pry'
 def load_library(library)
   require "yaml"
   emoticons = YAML.load_file(library)
@@ -31,6 +30,4 @@ def get_english_meaning(file, face)
     return sorry_message
   end
   return emoticon_hash["get_meaning"][face]
-end
-  
 end
