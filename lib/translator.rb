@@ -24,6 +24,6 @@ def get_japanese_emoticon(file, face)
   return emoticon_hash["get_emoticon"][face]
 end
 
-def get_english_meaning
+def get_english_meaning()
   # code goes here
 end
