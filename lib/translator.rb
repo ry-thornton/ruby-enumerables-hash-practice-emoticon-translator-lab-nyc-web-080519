@@ -26,6 +26,11 @@ end
 
 def get_english_meaning(file, face)
   emoticon_hash = load_library(file)
-  if !
+  if !emoticon_hash["get_meaning"].has_key?(face)
+    sorry_message = "Sorry, that emoticon was not found"
+    return sorry_message
+  end
+  return emoticon_hash["get_meaning"][face]
+end
   
 end
