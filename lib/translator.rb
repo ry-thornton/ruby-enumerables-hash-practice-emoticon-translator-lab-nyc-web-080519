@@ -19,7 +19,7 @@ sorry_message = "Sorry, that emoticon was not found"
 
 def get_japanese_emoticon(file, face)
   emoticon_hash = load_library(file)
-  if !face
+  if !emoticon_hash["get_emoticon"].has_key?(face)
     return sorry_message
   end
   return emoticon_hash["get_emoticon"][face]
