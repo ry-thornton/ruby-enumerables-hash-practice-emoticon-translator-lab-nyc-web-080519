@@ -23,7 +23,6 @@ def get_japanese_emoticon(file, face)
     return "Sorry, that emoticon was not found"
   end
   return emoticon_hash["get_emoticon"][face]
-
 end
 
 def get_english_meaning
